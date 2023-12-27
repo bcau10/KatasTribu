@@ -25,6 +25,7 @@ namespace RomanNumerals
                 Console.WriteLine("Resultat : " + RomanNumeralsImpl.EnChiffresRomains(monEntierAConvertirEnChiffresRomains));
                 LogWriter.TraceInfo("Resultat : " + RomanNumeralsImpl.EnChiffresRomains(monEntierAConvertirEnChiffresRomains));
                 LogWriter.TraceInfo("Tâche finie");
+                //ajout en plus pour feature branche maBrancheTest
 
             }  
             catch (Exception e)
