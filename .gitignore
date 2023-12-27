@@ -1,0 +1,65 @@
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Visual Studio Build directories
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Oo]ld/
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.buils
+*.pidb
+*.svclog
+*.scc
+*.bak
+
+# Others
+UgradeLog.htm
+
+#Visual Studio cache/options directory
+.vs/
+
+#Visual Studio auto generated files
+Generated\ Files/
+
+#MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+#NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
