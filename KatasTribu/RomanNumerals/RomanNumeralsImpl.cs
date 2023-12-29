@@ -4,12 +4,38 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Configuration;
 namespace RomanNumerals
 {
     public class RomanNumeralsImpl
     {
-        private const string connectionString = ConfigurationManager[""];
+        private string connectionString = ConfigurationManager.AppSettings["LogFilePath"];
+        private delegate int Calcul(int a, int b);
+        private static Calcul method;
+
+        string chaine = "bonjour";
+
+        public RomanNumeralsImpl(string maChaine)
+        {
+            chaine = maChaine;
+            //return (0);
+        }
+        public string Chaine
+        {
+            get
+            {
+                return (chaine);
+            }
+            set
+            {
+                chaine = value;
+            }
+        }
+        public static void test()
+        {
+            method = (a, b) => { return (a + b); };
+            int res = method(4, 3);
+        }
         public static string EnChiffreRomain(int chiffre)
         {
             string chiffreRomain = string.Empty;
@@ -148,10 +174,10 @@ namespace RomanNumerals
         }
         public static void RecuperationDonneeEnBase()
         {
-            using(SqlConnection conn=new SqlConnection(connectionString))
-            { 
+            //using(SqlConnection conn=new SqlConnection(connectionString))
+            //{ 
             
-            }
+            //}
         }
     }
 }
